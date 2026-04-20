@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #e6f7ff 0%, #b3e0ff 100%);
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(179, 224, 255, 0.4);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+h1 {
+    color: #2c6a8f;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(179, 224, 255, 0.5);
+}
+
+.subtitle {
+    color: #5a9bc9;
+    font-size: 1.2rem;
+}
+
+/* Стили для меню выбора */
+.menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.menu-btn {
+    padding: 12px 25px;
+    background: #8bb8e8;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.menu-btn:hover {
+    background: #5a9bc9;
+    transform: translateY(-2px);
+}
+
+.menu-btn.active {
+    background: #2c6a8f;
+}
+
+/* Контентные блоки */
+.content-section {
+    display: none;
+    padding: 20px;
+    border-left: 4px solid #8bb8e8;
+    background-color: #f0f8ff;
+    border-radius: 0 8px 8px 0;
+    margin-bottom: 20px;
+}
+
+.content-section.active {
+    display: block;
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+h2 {
+    color: #2c6a8f;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #d0e7f9;
+    padding-bottom: 5px;
+}
+
+ul {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    color: #5a9bc9;
+    font-style: italic;
+}
